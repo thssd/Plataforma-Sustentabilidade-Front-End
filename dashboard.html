@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard – SoulUp</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"> SoulUp</a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Dashboard do Usuário</h1>
+        <p>Acompanhe seus pontos, missões e impacto ambiental em tempo real.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+
+      <!-- STATS -->
+      <div class="dashboard-stats">
+        <div class="stat-card">
+          <span class="stat-icon">⭐</span>
+          <h3 class="stat-value" id="pontos-valor">1.200</h3>
+          <p class="stat-label">Pontos Acumulados</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">✅</span>
+          <h3 class="stat-value">18</h3>
+          <p class="stat-label">Missões Completas</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🏅</span>
+          <h3 class="stat-value">Eco Hero</h3>
+          <p class="stat-label">Nível Atual</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">🌱</span>
+          <h3 class="stat-value">42 kg</h3>
+          <p class="stat-label">CO₂ Economizado</p>
+        </div>
+      </div>
+
+      <!-- MISSÕES DISPONÍVEIS -->
+      <h2 class="section-title" style="margin-top:2rem">Missões Disponíveis</h2>
+      <div class="cards" id="missoes-container">
+
+        <div class="card mission-card">
+          <h3>♻️ Reciclar Materiais</h3>
+          <p>Separe e recicle lixo eletrônico, plástico ou papel.</p>
+          <div class="mission-meta">
+            <span class="badge badge-green">+80 pts</span>
+            <button class="btn btn-sm" onclick="completarMissao(this, 80)">Completar</button>
+          </div>
+        </div>
+
+        <div class="card mission-card">
+          <h3>🚴 Usar Transporte Sustentável</h3>
+          <p>Vá ao trabalho ou escola de bicicleta ou a pé.</p>
+          <div class="mission-meta">
+            <span class="badge badge-green">+60 pts</span>
+            <button class="btn btn-sm" onclick="completarMissao(this, 60)">Completar</button>
+          </div>
+        </div>
+
+        <div class="card mission-card">
+          <h3>💡 Economizar Energia</h3>
+          <p>Reduza o consumo de energia em sua residência por uma semana.</p>
+          <div class="mission-meta">
+            <span class="badge badge-green">+100 pts</span>
+            <button class="btn btn-sm" onclick="completarMissao(this, 100)">Completar</button>
+          </div>
+        </div>
+
+        <div class="card mission-card">
+          <h3>🌿 Plantar uma Árvore</h3>
+          <p>Participe de um plantio comunitário ou plante em casa.</p>
+          <div class="mission-meta">
+            <span class="badge badge-green">+90 pts</span>
+            <button class="btn btn-sm" onclick="completarMissao(this, 90)">Completar</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PROGRESSO -->
+      <h2 class="section-title" style="margin-top:2rem">Seu Progresso</h2>
+      <div class="progress-box">
+        <p>Progresso para o próximo nível: <strong id="progresso-texto">1.200 / 2.000 pts</strong></p>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="barra-progresso" style="width: 60%"></div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 SoulUp – Desenvolvido para o Challenge FIAP</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="integrantes.html">Integrantes</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
