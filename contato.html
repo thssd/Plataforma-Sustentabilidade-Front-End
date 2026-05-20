@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato – SoulUp</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo"> SoulUp</a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contato</h1>
+        <p>Fale conosco sobre o projeto SoulUp.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="contact-wrapper">
+
+        <!-- FORMULÁRIO -->
+        <div class="contact-form-box">
+          <h2>Envie uma Mensagem</h2>
+          <form id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="nome">Nome Completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
+              <span class="error-msg" id="erro-nome"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" />
+              <span class="error-msg" id="erro-email"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto *</label>
+              <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" />
+              <span class="error-msg" id="erro-assunto"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+              <span class="error-msg" id="erro-mensagem"></span>
+            </div>
+
+            <button type="submit" class="btn">Enviar Mensagem</button>
+            <div id="feedback" class="feedback-msg" aria-live="polite"></div>
+
+          </form>
+        </div>
+
+        <!-- INFORMAÇÕES DE CONTATO -->
+        <div class="contact-info-box">
+          <h2>Informações</h2>
+          <ul class="contact-info-list">
+            <li>📍 <strong>Local:</strong> FIAP – São Paulo, SP</li>
+            <li>📧 <strong>E-mail:</strong> alpha04@fiap.com.br</li>
+            <li>🎓 <strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</li>
+            <li>📅 <strong>Turma:</strong> 1TDSPW – 2026</li>
+          </ul>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" class="btn btn-sm">GitHub do Projeto</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 SoulUp – Desenvolvido para o Challenge FIAP</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="integrantes.html">Integrantes</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contato.js"></script>
+</body>
+</html>
